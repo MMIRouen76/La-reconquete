@@ -31,7 +31,7 @@ p:not(.z1,.accs,#dat,#annee,.txt,.txt2,.chelou,.chelou2,#homg,#homg2,#homg3,.dec
   margin-bottom: 5%;
 }
 a{
-  cursor:url('images/epee.png'),pointer;
+  cursor:url('epee.png'),pointer;
 }
 a:link, a:visited{
   color:#494f5b;
@@ -173,7 +173,7 @@ a:hover, a:focus{
 }
 .photo1{
   border:0.6vw solid #494f5b;
-  background-image:url("images/place.jpg");
+  background-image:url("place.jpg");
   background-size:cover;
   float:right;
   margin-top:15vw;
@@ -216,7 +216,7 @@ a:hover, a:focus{
   color:#ddd3b0;
 }
 .photo2{
-  background-image:url("images/combat.png");
+  background-image:url("combat.png");
   background-size:contain;
   float:right;
   margin-top:31vw;
@@ -491,7 +491,7 @@ section > div{
 }
 #trailer{
   width:40vw;
-/*  background-image:url("images/place.jpg");
+/*  background-image:url("place.jpg");
   background-size:cover;*/
   background-color:#494f5b;
   height:25vw;
@@ -523,7 +523,7 @@ section > div{
 #aff1{
   position:absolute;
   width:15vw;
-/*  background-image:url("images/1.jpg");
+/*  background-image:url("1.jpg");
   background-size:cover;*/
   background-color:#494f5b;
   height:20vw;
@@ -533,7 +533,7 @@ section > div{
 #aff2{
   position:absolute;
   width:15vw;
-/*  background-image:url("images/2.jpg");
+/*  background-image:url("2.jpg");
   background-size:cover;*/
   background-color:#494f5b;
   height:20vw;
