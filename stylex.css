@@ -1,647 +1,374 @@
-/* Style global*/
-*,*:before,*:after {
-  box-sizing: inherit;
-  margin: 0; 
-  padding: 0; 
-  border: 0 none; 
-  position: relative;
-  scrollbar-color: #494f5b #ddd3b0;
-  scroll-behavior: smooth;
-}
-html{
-  background: #ddd3b0;
-  box-sizing: border-box;
-  font-family: 'Kanit';
-  color: #494f5b;
-  overflow-x: hidden;
-}
-h1,
-h2{
-  margin: 0 0 auto;
-  font-size: calc(5vmin + 3vmax);
-  text-align: center;
-  line-height: 1;
-}
-p:not(.z1,.accs,#dat,#annee,.txt,.txt2,.chelou,.chelou2,#homg,#homg2,#homg3,.dec,#nbre1,#nbre2,#nbre3,#dec1,#dec2,#dec3,#dec4,#dec5,#dec6,.evnt,#medp){
-  margin: 0 0 auto;
-  text-align: center;
-  width: 100%;
-  font-family: 'Kanit Light';
-  font-size: calc(1.5vmin + .75vmax);
-  margin-bottom: 5%;
-}
-a{
-  cursor:url('epee.png'),pointer;
-}
-a:link, a:visited{
-  color:#494f5b;
-  text-decoration:none;
-  font-family: 'Kanit Light';
-}
-a:hover, a:focus{
-  opacity:0.3;
-}
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Accueil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- MENU -->
+<header id="header">
+<div id="entete">
+  <a href="#">
+	<img id="logo" src="images/logo_la_reconquete.png"/></a>
+	<img id="separ" src="images/aze.png"/>
+	<p id="annee"> 2031 </p>
+  <audio src="aoe2.mp3" hidden id="audio"></audio>
+  <audio src="jeanne.mp3" hidden id="audio2"></audio>
+  <nav id="menu">
+	 	 <ul>
+			  <li class="lien">
+				  <a href="#decouvrir">
+					 DÉCOUVRIR
+				  </a>
+			  </li>
+			  <li class="lien">
+				  <a href="#evenement">
+					 ÉVÈNEMENT
+				  </a>
+			  </li>
+        <li class="lien">
+          <a href="#histoire">
+            HISTOIRE
+          </a>
+        </li>
+			  <li class="lien">
+				  <a href="#media">
+					 MÉDIA
+				  </a>
+			  </li>
+			  <li class="lien">
+				  <a href="#informations">
+					 INFORMATIONS
+				  </a>
+			  </li>
+		  </ul>
+  </nav>
+</div>
+</header>
+<!-- FIN MENU -->
 
 
 
 
-
-
-/* Menu Principal */
-#logo{
-  width:7vw;
-  height:7vw;
-  position: absolute;
-  margin-left:2vw;
-  margin-top:2.3vw;
-}
-#separ{
-  width:0.3vw;
-  height:8vw;
-  position: absolute;
-  margin-left:10vw;
-  margin-top:0.4vw;
-}
-#annee{
-  font-size:2.8vw;
-  position: absolute;
-  margin-left:11vw;
-  margin-top:2.3vw;
-  font-family: Kanit;
-}
-.lien{
-    font-size:1.5vw;
-    padding-left:2.9vw;
-    display:inline-block;
-    font-family: Kanit Light;
-}
-#entete{
-  width:100vw;
-  margin-top:1.3vw;
-}
-#menu{
-  width:65vw;
-  float:right;
-  margin-top:3.4vw;
-  margin-right:-9vw;
-  font-family: Kanit;
-}
-#header{
-  width:100vw;
-  height:10vw;
-  margin-top:-10.3vw;
-  position:absolute;
-  opacity:1;
-  z-index:1000;
-  background-color:none;
-}
+<!-- Box réseaux sociaux -->
+<div id="rsx">
+  <a href="https://www.instagram.com/mmi_rouen/">
+    <img src="images/insta.png"/>
+  </a>
+  <a href="https://twitter.com/mmi_rouen">
+    <img src="images/twitter.png"/>
+  </a>
+  <a href="https://fr-fr.facebook.com/SrcRouen/">
+    <img src="images/fb.png"/>
+  </a>
+</div>
 
 
 
 
-
-
-/* Box réseaux sociaux */
-#rsx{
-  position:fixed;
-  display:inline-block;
-  width:1vw;
-  margin-top: 10vw;
-  margin-left: 2vw;
-  /*z-index:10; */ /* Passes sur du text */
-}
-#rsx img{
-  margin-top:0.6vw;
-  width:4vw;
-  height:4vw;
-}
-#rsx img:hover{
-/*  width:5vw;
-  height:5vw;*/
-  opacity:0.7;
-}
+<!-- ACCUEIL -->
+<div id="tout">
+<p class="txt">LA PLUS GROSSE REPRÉS <br></p>
+<p class="txt2">DE BATAILLES  DE</p>
+<div class="gris">
+	<p class="chelou">ENTATION</p>
+	<p class="chelou2">FRANCE</p>
+</div>
+<div class="photo1">
+  <div id="gris2">
+    <p id="homg">En hommage</p>
+    <p id="homg2">à</p>
+    <p id="homg3"><b>Jeanne d'Arc</b></p>
+  </div>
+</div>
+<div class="photo2"></div>
+</div>
 
 
 
 
+<!-- DECOUVRIR -->
+<img class="separateur" src="images/separateur.png" />
+<div id="decouvrir"></div>
+<p class="evnt" id="evt1">La reconquête est un projet créé par</p>
+<p class="evnt" id="evt2">5 étudiants de MMI à l’IUT d’Elbeuf, </p>
+<p class="evnt" id="evt3">ce projet consiste en la </p>
+<p class="evnt" id="evt4">reconstitution d'une bataille grandeur </p>
+<p class="evnt" id="evt5">nature, qui a émergé suite à une </p>
+<p class="evnt" id="evt6">longue réflexion pour un projet tutoré</p>
+<p class="evnt" id="evt7">de fin d’année. Cet événement est </p>
+<p class="evnt" id="evt8">en mémoire Jeanne d’Arc et aura lieu</p>
+<p class="evnt" id="evt9">le jour des 600 ans de sa mort. </p>
 
-
-/* 1ère page (Accueil) */
-#tout{
-  margin-top:9vw;
-}
-.txt{
-  font-size:3.5vw;
-  font-family: Kanit;
-  position: absolute;
-  margin-left:15vw;
-  margin-top:3vw;
-  letter-spacing: 0.45vw;
-}
-.chelou{
-  font-size:3.5vw;
-  font-family: Kanit;
-  position: absolute;
-  margin-top:3vw;
-  margin-left:0.15vw;
-  letter-spacing: 0.45vw;
-  color:#ddd3b0;
-}
-.txt2{
-  font-size:3.5vw;
-  font-family: Kanit ExtraLight;
-  position: absolute;
-  margin-left:15vw;
-  margin-top:6vw;
-  letter-spacing: 1.5vw;
-}
-.chelou2{
-  font-size:3.5vw;
-  font-family: Kanit ExtraLight;
-  position: absolute;
-  margin-left:0.7vw;
-  margin-top:6vw;
-  letter-spacing: 1.3vw;
-  color:#ddd3b0;
-}
-.gris{
-  background-color:#494f5b;
-  float:right;
-  margin-right:5.2vw;
-  width:30vw;
-  height:30vw;
-}
-.photo1{
-  border:0.6vw solid #494f5b;
-  background-image:url("place.jpg");
-  background-size:cover;
-  float:right;
-  margin-top:15vw;
-  margin-right:-10vw;
-  width:20vw;
-  height:20vw;
-}
-#gris2{
-  background-color:#494f5b;
-  float:right;
-  margin-top:5.5vw;
-  margin-right:19.2vw;
-  width:30vw;
-  height:8vw;
-}
-#homg{
-  font-size:3.8vw;
-  font-family:Kanit Light;
-  line-height:1;
-  margin-left:2.8vw;
-  letter-spacing: 0.3vw;
-  color:#ddd3b0;
-}
-#homg2{
-  font-size:3.8vw;
-  position: absolute;
-  font-family:Kanit Light;
-  line-height:1;
-  margin-left:2.9vw;
-  letter-spacing: 0.3vw;
-  color:#ddd3b0;
-}
-#homg3{
-  font-size:3.8vw;
-  position: absolute;
-  font-family:Kanit;
-  line-height:1;
-  margin-left:6.3vw;
-  letter-spacing: 0.1vw;
-  color:#ddd3b0;
-}
-.photo2{
-  background-image:url("combat.png");
-  background-size:contain;
-  float:right;
-  margin-top:31vw;
-  margin-right:-35vw;
-  width:24vw;
-  height:11.15vw;
-}
+<div id="evlogo">
+  <img src="images/univ.png" id="evimg"/>
+  <img src="images/iut.png" id="evimg2"/>
+</div>
+<div id="evlogo2">
+  <img src="images/mmi.png" id="evimg3"/>
+</div>
 
 
 
 
+<!-- EVENEMENT -->
+<img class="separateur" src="images/separateur.png" />
+<div id="evenement"></div>
+<div id="decouvrir2">
+  <p class="dec">La reconquête est une reconstitution de bataille grandeur nature ouverte à tous.</p>
 
+  <p class="dec">C'est un spectacle atypique qui prend place sur la célèbre place du vieux marché à Rouen, où Jeanne d'Arc</p>
 
-/* 2nde page (Découvrir) */
-.evnt{
-  position:absolute;
-  font-size:1.5vw;
-  letter-spacing:0.1vw;
-  margin-left:60vw;
-}
-#evt1{
-  margin-top:4vw;
-}
-#evt2{
-  margin-top:7.5vw;
-  margin-left:60.5vw;
-}
-#evt3{
-  margin-top:11vw;
-  margin-left:64vw;
-}
-#evt4{
-  margin-top:14.5vw;
-}
-#evt5{
-  margin-top:18vw;
-  margin-left:62vw;
-}
-#evt6{
-  margin-top:21.5vw;
-}
-#evt7{
-  margin-top:25vw;
-  margin-left:62vw;
-}
-#evt8{
-  margin-top:28.5vw;
-  margin-left:61vw;
-}
-#evt9{
-  margin-top:32vw;
-  margin-left:63vw;
-}
-#evlogo{
-  width:22vw;
-  height:22vw;
-  background-color:#ddd3b0;
-  border:1.5vw solid #494f5b;
-  margin-left: 11vw;
-  margin-top:5vw;
-  z-index:1;
-}
-#evlogo2{
-  width:22vw;
-  height:22vw;
-  background-color:#494f5b;
-  border:1.5vw solid #ddd3b0;
-  margin-left: 26vw;
-  margin-top:-12vw;
-  z-index:2;
-}
-#evimg{
-  position:absolute;
-  width:15vw;
-  margin-left:2vw;
-  margin-top:1vw;
-}
-#evimg2{
-  position:absolute; 
-  margin-top:9vw;
-  margin-left:5vw;
-  width:8vw;
-}
-#evimg3{
-  position:absolute;
-  width:17vw;
-  margin-top:5.9vw;
-  margin-left:1vw;
-}
+  <p class="dec">fut brûlée. En son honneur, habillés et équipés de manière identique à l'époque, </p>
+
+  <p class="dec">les participants se livreront un combat sans merci pour venger et revivre les batailles épiques d'autres fois.</p>
+
+  <p class="dec"> Pour finir, cet évènement a aussi un but institutionnel, celui d'aider le grand public</p>
+
+  <p class="dec"> à en apprendre plus sur cette période de l'histoire.</p>
+</div>
+<img id="bre" src="images/barre.png" />
+
+<!-- 500 -->
+<img src="images/plus.png" id="plus"/>
+<div id="grix1">
+  <p id="nbre1">500</p>
+</div>
+<p id="dec1"> <b>PARTICIPANTS</b> </p>
+<p id="dec2"> TOUT ÂGE </p>
+<!-- 3H -->
+<img src="images/plus.png" id="plus2"/>
+<div id="grix2">
+  <p id="nbre2">3H</p>
+</div>
+<p id="dec3"> <b>DE BATAILLE</b> </p>
+<p id="dec4"> ARCHANÉE </p>
+<!-- ∞ -->
+<div id="grix3">
+  <p id="nbre3">∞</p>
+</div>
+<p id="dec5"> <b>DE FUN</b> </p>
+<p id="dec6"> INTENSE </p>
 
 
 
 
+<!-- HISTOIRE -->
+<img class="separateur" src="images/separateur.png" />
+<article id="histoire">
 
+  <figure>
+    <img src='images/1.jpg' width="50"/>
+  </figure>
+  <section>
+    <div>
+      <h1 id="titre">Le commencement</h1>
+      <p>En l'an 1412, une petite fille du nom de Johannette de Vouthon est née à Domrémy-la-Pucelle, un petit village 
+        du duché de Bar. <br>
+        Vers l'an 1428, à l'âge de 16 ans, elle décide alors de prêter allégeance à la France qui est en conflit avec les 
+        Anglais depuis l'an 1337. <br>
+        Cette jeune adolescente  a apporté un gros soutien lors de cette guerre qui sera remportée par la France en 
+        1453.</p>
+    </div>
+  </section>
+  
+  <figure>
+    <img src='images/3.jpg' width="50"/>
+  </figure>
+  <section>
+    <div>
+      <h1>La fin</h1>
+      <p>Effectivement, Johannette de Vouthon surnommé Jeanne d'Arc de nos jours, a commandé les armées du roi de France, 
+        Charles VII.<br>
+        Mais, malgré ce soutien qu'elle a apporté, elle fût capturé par les Bourguignons en 1430, qui la vende aux Anglais
+        pour mille livres tournois (monnaie de l'époque).<br>
+        Elle fut brulée par les Anglais à Rouen, car elle disait entendre des voix qui l'a guidée lors de ses batailles.</p>
+    </div>
+  </section>
 
-/* 3ème page (Evènement) */
-#decouvrir2{
-  padding-top:3vw;
-  width:70vw;
-  margin-left:15vw;
-}
-.dec{
-  font-size:1.4vw;
-  font-family:Kanit;
-  text-align:center;
-}
-#bre{
-  margin-top:5vw;
-  margin-left:23.5vw;
-  width:55vw;
-  height:0.2vw;
-}
-#grix1,#grix2,#grix3{
-  position:relative;
-  width:12vw;
-  height:7vw;
-  background-color: #494f5b;
-}
-#grix1{
-  margin-left:19vw;
-  margin-top:5vw;
-}
-#grix2{
-  margin-top:-7vw;
-  margin-left:63vw;
-}
-#grix3{
-  margin-top:5vw;
-  margin-left:38vw;
-}
-#nbre1,#nbre2,#nbre3{
-  font-family: Kanit Black;
-  text-align:center;
-  padding-top:0.3vw;
-  letter-spacing: 0.2vw;
-  font-size:4vw;
-  color:#ddd3b0;
-}
-#nbre3{
-  font-size:8vw;
-  line-height:0.65;
-  margin-left:0.2vw;
-}
-#plus,#plus2{
-  position:absolute;
-  width:3vw;
-  height:3vw;
-}
-#plus{
-  margin-top:12.67vw;
-  left:15.7vw;
-}
-#plus2{
-  margin-top:-5vw;
-  left:59.75vw;
-}
-#dec1,#dec2,#dec3,#dec4,#dec5,#dec6{
-  position:absolute;
-  color:#494f5b;
-  font-family: Kanit;
-  font-size:2.5vw;
-}
-#dec2,#dec4,#dec6{
-  font-style:italic;
-  font-family: Kanit ExtraLight;
-}
-#dec1{
-  margin-top:-7.2vw;
-  margin-left:31vw;
-}
-#dec2{
-  margin-top:-4.2vw;
-  margin-left:30.8vw;
-}
-#dec3{
-  margin-top:-7.2vw;
-  margin-left:75vw;
-}
-#dec4{
-  margin-top:-4.2vw;
-  margin-left:75vw;
-}
-#dec5{
-  margin-top:-7.2vw;
-  margin-left:50.1vw;
-}
-#dec6{
-  margin-top:-4.2vw;
-  margin-left:50.1vw;
-}
+  <figure>
+    <img src='images/2.jpg' width="50"/>
+  </figure>
+  <section>
+    <div>
+      <h2 id="tt"><a href='https://fr.wikipedia.org/wiki/Guerre_de_Cent_Ans'>Direction la Guerre de Cent ans</a></h2>
+    </div>
+  </section>
+</article>
 
 
 
 
+<!-- MEDIA -->
+<img class="separateur" src="images/separateur.png" />
+<div id="media"></div>
+<h1 id="medtitre"> TRAILER </h1>
+<div id="trailer">
+  <video controls id="video">
+    <source src="images/videoPtutfini.mp4" type="video/mp4">
+  </video>
+</div>
+<img src="images/aze.png" id="medbarre"/>
+<p id="medp">Voici un avant goût de l'évènement</p>
 
-/* 4ème page (Histoire) */
-#titre{
-  margin-top:3vw;
+<div id="aff1"></div>
+<div id="aff2"></div>
+<div id="aff3"></div>
+
+<!-- INFORMATIONS -->
+<img class="separateur" src="images/separateur.png" />
+<div id="informations"></div>
+<img src="images/affiche1.png" id="i2"/>
+<div>
+<div id="n1">
+  <h1>Localisation :</h1>
+</div>
+<p class="z1"><b>France</b></p>
+<p class="z1 z2"><b>Rouen</b></p><p class="z1 z2 z3">(76000)</p>
+<p class="z1 z2 z4">Place du vieux marché</p>
+
+<div id="n2">
+  <h1>Date :</h1>
+</div>
+<p id="dat"><b>30</b> mai <b>2031</b></p>
+
+<div id="n3">
+  <h1>Accessibilité :</h1>
+</div>
+<p class="accs"><b>Ouvert</b><p class="accs xx4"> à tous</p>
+<p class="accs xx xx3">Parking</p><p class="accs xx1"><b>gratuit</b></p>
+<p class="accs xx">Entrée</p><p class="accs xx2">
+<b>gratuite</b></p>
+</div>
+
+
+<!-- Fin -->
+<img class="separateur" src="images/separateur.png" />
+
+<script>
+// Audio si appui sur logo
+var audio = document.getElementById("audio");
+var audio2 = document.getElementById("audio2");
+var annee = document.getElementById("annee");
+
+var logo = document.getElementById("logo");
+logo.addEventListener("click",action);
+annee.addEventListener("click",action2);
+
+function action(){
+  console.log(document.documentElement.scrollTop);
+	audio.play();
 }
-body > article{
-  display: flex;
-  flex-wrap: wrap;
-}
-figure{
-  background: #eee;
-  width: calc( 50vw + 1px);
-  height: 100vh;
-  margin: 0 auto 10vh 0;
-  position: sticky;
-  top: 0;
-  overflow: hidden;
-  box-shadow: 4px -4px 8px rgba(0,0,0,.4);
-}
-section{
- background: #ddd3b0;
-  width: calc(50vw + 1px);
-  height: 100vh;
-  margin: 0 0 10vh auto;
-  position: sticky;
-  top: 0;
-  padding: 5vmin;
-  box-shadow: -4px -4px 8px rgba(0,0,0,.4);
-}
-figure:nth-of-type(1),
-section:nth-of-type(1){
-  margin: 0 0 10vh 0;
-  width: 50%;
-}
-figure:nth-of-type(2n){
-  margin: 0 0 10vh auto;
-  box-shadow: -4px -4px 8px rgba(0,0,0,.4);
-}
-section:nth-of-type(2n){
-  margin: 0 auto 10vh 0;
-  box-shadow: 4px -4px 8px rgba(0,0,0,.4);
-}
-figure:last-of-type,
-section:last-of-type{
-  margin-bottom: 0;
-}
-section:nth-of-type(2n):after{
-  right: 5vmin;
-  left: 45%;
-}
-figure img{
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: contain;
-  object-position: center;
-}
-section > div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  padding: 1rem;
-}
-#tt{
-  margin-top:20vh;
+function action2(){
+  console.log(document.documentElement.scrollTop);
+  audio2.play();
 }
 
 
+// Apparition / Disparition menu
+var header = document.getElementById("header");
+var separ = document.getElementById("separ");
+var menu1 = document.getElementById("menu");
+var entete = document.getElementById("entete");
+var lien = document.getElementsByClassName("lien");
+
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 100) {
+        header.style.backgroundColor = "#ddd3b0";
+        header.style.marginTop = "-10.3vw";
+        header.style.position = "fixed";
+        header.style.boxShadow = "0 0 8px rgba(0,0,0,.4)";
+        header.style.opacity = "0";
+        header.addEventListener("mouseover",menu);
+        header.addEventListener("mouseout",menu2);
+
+
+        //<!> Modif importante de menu
+        header.style.height = "6vw"; 
+
+        logo.style.width ="3vw";
+        logo.style.height ="3vw";
+
+        separ.style.width = "0.1vw";
+        separ.style.height = "3.5vw";
+        separ.style.marginLeft = "5.5vw";
+        separ.style.marginTop = "0.6vw";
+
+        annee.style.fontSize = "1vw";
+        annee.style.marginLeft = "6vw";
+        annee.style.marginTop = "1.6vw";
+
+        menu1.style.marginTop = "1.5vw";
+        menu1.style.marginRight = "-22vw";
+
+        lien[0].style.fontSize = "1.2vw";
+        lien[1].style.fontSize = "1.2vw";
+        lien[2].style.fontSize = "1.2vw";
+        lien[3].style.fontSize = "1.2vw";
+        lien[4].style.fontSize = "1.2vw";
+        lien[0].style.paddingLeft = "1.5vw";
+        lien[1].style.paddingLeft = "1.5vw";
+        lien[2].style.paddingLeft = "1.5vw";
+        lien[3].style.paddingLeft = "1.5vw";
+        lien[4].style.paddingLeft = "1.5vw";
+
+        // <!>
+    }
+    else{
+        header.style.backgroundColor = "none";
+        header.style.marginTop = "-10.3vw";
+        header.style.position = "absolute";
+        header.style.opacity = "1";
+        header.style.boxShadow = "0 0 0";
+        header.removeEventListener("mouseover",menu);
+        header.removeEventListener("mouseout",menu2);
+
+
+        //<!>
+        header.style.height = "10vw"; 
+
+        logo.style.width ="7vw";
+        logo.style.height ="7vw";
+
+        separ.style.width = "0.3vw";
+        separ.style.height = "8vw";
+        separ.style.marginLeft = "10vw";
+        separ.style.marginTop = "0.4vw";
+
+        annee.style.fontSize = "2.8vw";
+        annee.style.marginLeft = "11vw";
+        annee.style.marginTop = "2.3vw";
+
+        menu1.style.marginTop = "3.4vw";
+        menu1.style.marginRight = "-9vw";
+
+        lien[0].style.fontSize = "1.5vw";
+        lien[1].style.fontSize = "1.5vw";
+        lien[2].style.fontSize = "1.5vw";
+        lien[3].style.fontSize = "1.5vw";
+        lien[4].style.fontSize = "1.5vw";
+
+        lien[0].style.paddingLeft = "2.9vw";
+        lien[1].style.paddingLeft = "2.9vw";
+        lien[2].style.paddingLeft = "2.9vw";
+        lien[3].style.paddingLeft = "2.9vw";
+        lien[4].style.paddingLeft = "2.9vw";
+        // <!>
+    }
+}
+function menu(){
+  if (header.style.opacity == "0"){
+  header.style.opacity = "1";}
+}
+function menu2(){
+  header.style.opacity = "0";
+}
 
 
 
-/* 5ème page (Média) */
-#medtitre{
-  font-size:2.5vw;
-  font-family:Kanit;
-  margin-left:-40vw;
-  margin-top:5vw;
-}
-#trailer{
-  width:40vw;
-/*  background-image:url("place.jpg");
-  background-size:cover;*/
-  background-color:#494f5b;
-  height:25vw;
-  margin-left:10vw;
-  margin-top:3vw;
-}
-#medbarre{
-  position:absolute;
-  width:0.2vw;
-  height:42vw;
-  margin-top:-32vw;
-  margin-left:57vw;
-}
-#medp{
-  font-family:Kanit Light;
-  font-style:italic;
-  font-size:1.3vw;
-  margin-left:17vw;
-  margin-top:0.4vw;
-  letter-spacing:0.1vw;
-}
-#aff1,#aff2,#aff3,#aff4{
-  position:absolute;
-  width:20vw;
-  height:13vw;
-}
-#aff1{
-  background-image:url("rouen1.jpg");
-  background-size:cover;
-  /*border:0.5vw solid #494f5b;*/
-  margin-left:62vw;
-  margin-top:-33.5vw;
-}
-#aff2{
-  background-image:url("rouen2.jpg");
-  background-size:cover;
-  /*border:0.5vw solid #494f5b;*/
-  margin-left:72vw;
-  margin-top:-20vw;
-}
-#aff3{
-  background-image:url("rouen3.jpg");
-  /*border:0.5vw solid #494f5b;*/
-  background-size:cover;
-  margin-left:62vw;
-  margin-top:-6.5vw;
-}
-
-
-
-
-
-/* 6ème page (Informations) */
-#i2{
-  margin-top:5vw;
-  width:100vw;
-  height:15vw;
-  z-index:-15;
-}
-#n1,#n2,#n3{
-
-  height:5vw;
-  background-color:#494f5b;
-  color:#ddd3b0;
-}
-#n1 h1,#n2 h1,#n3 h1{
-  font-size:3.5vw;
-  padding-top:0.5vw;
-}
-#n2,#n3{
-  position:relative;
-}
-#n1{
-  width:24vw;
-  margin-top:5vw;
-  margin-left:10vw;
-}
-#n2{
-  margin-top:-4.9vw;
-  width:12vw;
-  margin-left:44vw;
-}
-#n3{
-  margin-top:-4.9vw;
-  width:24vw;
-  margin-left:66vw;
-}
-#dat{
-  position:absolute;
-  font-family:Kanit Light;
-  font-size:2.5vw;
-  margin-left:43.3vw;
-}
-.accs{
-  font-family:Kanit Light;
-  font-size:2.5vw;
-  margin-left:70vw;
-  line-height:1.3;
-}
-.xx{
-  font-style:italic;
-  font-family:Kanit extraLight;
-}
-.xx1{
-  position:absolute;
-  margin-left:78.5vw;
-  margin-top:-3.25vw;
-}
-.xx2{
-  position:absolute;
-  margin-left:78vw;
-  margin-top:-3.25vw;
-}
-.xx3{
-  margin-left:69vw;
-}
-.xx4{
-  font-family:Kanit extraLight;
-  margin-left:78.5vw;
-  margin-top:-3.25vw;
-}
-
-.z1{
-  font-family:Kanit Light;
-  position:absolute;
-  left:18vw;
-  font-size:2.5vw;
-}
-.z2{
-  margin-top:2.5vw;
-  margin-left:-4vw;
-}
-.z3{
-  font-family:Kanit ExtraLight;
-  margin-left:3.7vw;
-}
-.z4{
-  font-family:Kanit ExtraLight;
-  font-style:italic;
-  margin-top:5vw;
-  margin-left:-7vw;
-}
-
-
-/* Séparateur */
-.separateur{
-  margin-top:15vh;
-  height:10vh;
-  width:100vw;
-  left:0;
-  bottom:0;
-  position:static;
-}
+</script>
+</body>
+</html>
