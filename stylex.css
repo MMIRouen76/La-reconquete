@@ -31,7 +31,7 @@ p:not(.z1,.accs,#dat,#annee,.txt,.txt2,.chelou,.chelou2,#homg,#homg2,#homg3,.dec
   margin-bottom: 5%;
 }
 a{
-  cursor:url('images/epee.png'),pointer;
+  cursor:url('epee.png'),pointer;
 }
 a:link, a:visited{
   color:#494f5b;
@@ -173,7 +173,7 @@ a:hover, a:focus{
 }
 .photo1{
   border:0.6vw solid #494f5b;
-  background-image:url("images/place.jpg");
+  background-image:url("place.jpg");
   background-size:cover;
   float:right;
   margin-top:15vw;
@@ -216,7 +216,7 @@ a:hover, a:focus{
   color:#ddd3b0;
 }
 .photo2{
-  background-image:url("images/combat.png");
+  background-image:url("combat.png");
   background-size:contain;
   float:right;
   margin-top:31vw;
@@ -491,7 +491,7 @@ section > div{
 }
 #trailer{
   width:40vw;
-/*  background-image:url("images/place.jpg");
+/*  background-image:url("place.jpg");
   background-size:cover;*/
   background-color:#494f5b;
   height:25vw;
@@ -523,21 +523,21 @@ section > div{
   height:13vw;
 }
 #aff1{
-  background-image:url("images/rouen1.jpg");
+  background-image:url("rouen1.jpg");
   background-size:cover;
   /*border:0.5vw solid #494f5b;*/
   margin-left:62vw;
   margin-top:-33.5vw;
 }
 #aff2{
-  background-image:url("images/rouen2.jpg");
+  background-image:url("rouen2.jpg");
   background-size:cover;
   /*border:0.5vw solid #494f5b;*/
   margin-left:72vw;
   margin-top:-20vw;
 }
 #aff3{
-  background-image:url("images/rouen3.jpg");
+  background-image:url("rouen3.jpg");
   /*border:0.5vw solid #494f5b;*/
   background-size:cover;
   margin-left:62vw;
